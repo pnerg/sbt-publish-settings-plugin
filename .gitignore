@@ -31,5 +31,3 @@ project/plugins/project/
 
 # automatic backup files
 *~
-
-sbt
