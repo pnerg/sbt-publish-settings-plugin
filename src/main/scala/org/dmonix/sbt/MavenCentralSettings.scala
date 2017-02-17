@@ -40,6 +40,7 @@ object MavenCentralSettings {
     *
     * @param artifactVersion The version of the artifact as specified in build.sbt
     * @return The resolver to use
+    * @since 0.5
     */
   def deployURL(artifactVersion:String):Option[Resolver] = {
     val repoURL = "https://oss.sonatype.org/"

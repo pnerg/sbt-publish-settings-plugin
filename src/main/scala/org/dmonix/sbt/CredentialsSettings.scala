@@ -61,6 +61,7 @@ object CredentialsSettings {
       * credentials ++= publishCredentials
       * }}}
       * @return A sequence with the credentials to use
+      * @since 0.5
       */
     def publishCredentials: Seq[Credentials] = {
       val ivyCredentials = Path.userHome / ".ivy2" / ".credentials"
@@ -85,6 +86,7 @@ object CredentialsSettings {
     *
     * @param credentialsFile The file containing the credentials
     * @return A sequence with the credentials to use
+    * @since 0.5
     */
   def publishCredentials(credentialsFile:File): Seq[Credentials] = {
     var realms = Seq[String]()
