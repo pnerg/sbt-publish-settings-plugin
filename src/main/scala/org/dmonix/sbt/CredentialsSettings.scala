@@ -58,7 +58,7 @@ object CredentialsSettings {
       * Example on usage in build.sbt:
       * {{{
       * import org.dmonix.sbt.CredentialsSettings._
-      * credentials ++= deployCredentials
+      * credentials ++= publishCredentials
       * }}}
       * @return A sequence with the credentials to use
       */
@@ -80,7 +80,7 @@ object CredentialsSettings {
     * Example on usage in build.sbt:
     * {{{
     * import org.dmonix.sbt.CredentialsSettings._
-    * credentials ++= deployCredentials(file("filePath"))
+    * credentials ++= publishCredentials(file("filePath"))
     * }}}
     *
     * @param credentialsFile The file containing the credentials
