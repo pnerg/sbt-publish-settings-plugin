@@ -16,7 +16,7 @@
  package org.dmonix
  
  /**
- * Contains the utility clases/objects for managing the settings.
+ * Contains the utility classes/objects for managing the settings.
  * @author Peter Nerg
  */
 package object sbt {}
