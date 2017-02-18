@@ -13,9 +13,6 @@ scalaVersion := "2.10.6"
 // Compiler directives
 //---------------------------------------
 
-// allow circular dependencies for test sources
-compileOrder in Test := CompileOrder.Mixed
-
 javacOptions ++= Seq("-source", "1.7", "-target", "1.7", "-Xlint")
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-language:implicitConversions", "-language:higherKinds", "-target:jvm-1.7")
 
