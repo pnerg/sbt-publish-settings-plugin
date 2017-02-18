@@ -31,7 +31,7 @@ user=secret-agent
 password=wont-tell-you
 ```
 
-Add these lines to your _build.sbt_ file to automatically read _~/.ivy2/.credentials"_ file and add it to your build.
+Add these lines to your _build.sbt_ file to automatically read _~/.ivy2/.credentials_ file and add it to your build.
 ```scala
 import org.dmonix.sbt.CredentialsSettings._
 credentials ++= publishCredentials
@@ -49,6 +49,9 @@ import org.dmonix.sbt.MavenCentralSettings._
 publishTo <<= version {publishURL(_)}
 ```
 Refer to the above _.credentials_ file for an example on how the credentials for Maven Central realm are configured.
+
+###Live Example
+Check out the [build.sbt](../blob/master/build.sbt) for this project to see the usage of the plugin.
 
 ###Installing the plugin
 Simply add this to the _plugins.sbt_ file (of course replacing the version):
