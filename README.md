@@ -51,7 +51,7 @@ publishTo <<= version {publishURL(_)}
 Refer to the above _.credentials_ file for an example on how the credentials for Maven Central realm are configured.
 
 ###Live Example
-Check out the [build.sbt](../blob/master/build.sbt) for this project to see the usage of the plugin.
+Check out the [build.sbt](../master/build.sbt) for this project to see the usage of the plugin.
 
 ###Installing the plugin
 Simply add this to the _plugins.sbt_ file (of course replacing the version):
