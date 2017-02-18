@@ -41,8 +41,8 @@ ScoverageSbtPlugin.ScoverageKeys.coverageHighlighting := {
 //----------------------------
 import org.dmonix.sbt.MavenCentralSettings._
 import org.dmonix.sbt.CredentialsSettings._
-publishTo <<= version {deployURL(_)}
-credentials ++= deployCredentials
+publishTo <<= version {publishURL(_)}
+credentials ++= publishCredentials
 
 //----------------------------
 //needed to create the proper pom.xml for publishing to mvn central
