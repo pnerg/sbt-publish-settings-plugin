@@ -1,12 +1,12 @@
 # SBT Publish Settings Plugin
 Plugin for managing settings needed for SBT publish.
 
-It can be very cumbersome to configure a build.sbt file properly if one wishes to publish the artifact to some repository (e.g. Nexus, Artifactory).  
+It can be very cumbersome to configure a _build.sbt_ file properly if one wishes to publish the artifact to some repository (e.g. Nexus, Artifactory).  
 This plugin provides help for that configuration.
 
 ###Credentials
 In order to be able to publish to any repository it generally requires you to provide credentials to that repository.  
-Traditionally sbt uses the _~/.ivy2/.credentials"_ file for that.  
+Traditionally sbt uses the _~/.ivy2/.credentials_ file for that.  
 It however requires some manual setup in the build.sbt file.  
 Also the utilities provided out-of-the-box only support one single domain in the _.credentials_ file.  
 
