@@ -54,7 +54,7 @@ Refer to the above _.credentials_ file for an example on how the credentials for
 Check out the [build.sbt](../master/build.sbt) for this project to see the usage of the plugin.
 
 ###Installing the plugin
-Simply add this to the _plugins.sbt_ file (of course replacing the version):
+Simply add this to the _plugins.sbt_ file:
 ```scala
-addSbtPlugin("org.dmonix.sbt" % "sbt-publish-settings-plugin" % "use-the-proper-version")
+addSbtPlugin("org.dmonix.sbt" % "sbt-publish-settings-plugin" % "0.5")
 ```
