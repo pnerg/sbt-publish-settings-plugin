@@ -5,9 +5,9 @@ sbtPlugin := true
 name := "sbt-publish-settings-plugin"
 organization := "org.dmonix.sbt"
 
-//sbt 13.x is built using Scala 2.10 hence we can't use 2.11 to build plugins
 scalaVersion := "2.10.6"
-
+crossScalaVersions := Seq("2.10.6", "2.12.3")
+crossSbtVersions := Seq("0.13.17", "1.1.6")
 
 //---------------------------------------
 // Compiler directives
@@ -18,20 +18,7 @@ scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-language:impli
 
 scalacOptions in (Compile, doc) ++= Seq("-doc-title", "SBT Publish Settings Plugin")
 scalacOptions in (Compile, doc) ++= Seq("-doc-root-content", baseDirectory.value+"/src/main/scaladoc/overview.txt")
-scalacOptions in (Compile, doc) ++= Seq("-doc-footer", "Copyright (c) 2017 Peter Nerg, Apache License v2.0.")
-
-//---------------------------------------
-
-libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "2.2.4" % "test"
-)
-
-//---------------------------------------
-
-ScoverageSbtPlugin.ScoverageKeys.coverageHighlighting := {
-  if (scalaBinaryVersion.value == "2.10") false
-  else false
-}
+scalacOptions in (Compile, doc) ++= Seq("-doc-footer", "Copyright (c) 2018 Peter Nerg, Apache License v2.0.")
 
 //----------------------------
 //info for where and how to publish artifacts
