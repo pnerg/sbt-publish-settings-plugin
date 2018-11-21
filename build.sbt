@@ -13,8 +13,12 @@ crossSbtVersions := Seq("0.13.17", "1.1.6")
 // Compiler directives
 //---------------------------------------
 
-javacOptions ++= Seq("-source", "1.7", "-target", "1.7", "-Xlint")
-scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-language:implicitConversions", "-language:higherKinds", "-target:jvm-1.7")
+scalacOptions := Seq("-feature",
+  "-language:postfixOps",
+  "-language:implicitConversions",
+  "-unchecked",
+  "-deprecation",
+  "-encoding", "utf8")
 
 scalacOptions in (Compile, doc) ++= Seq("-doc-title", "SBT Publish Settings Plugin")
 scalacOptions in (Compile, doc) ++= Seq("-doc-root-content", baseDirectory.value+"/src/main/scaladoc/overview.txt")
